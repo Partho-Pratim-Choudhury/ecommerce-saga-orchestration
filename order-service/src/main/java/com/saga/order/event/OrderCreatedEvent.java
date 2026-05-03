@@ -14,5 +14,7 @@ public class OrderCreatedEvent {
     private Integer quantity;
     private BigDecimal totalAmount;
     private LocalDateTime timestamp;
+
+    @Builder.Default
     private String eventType = "ORDER_CREATED";
 }
